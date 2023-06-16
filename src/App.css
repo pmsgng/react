@@ -2,6 +2,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
 }
-
+.counter__text {
+  border: none;
+  min-width: 8rem;
+  height: 2rem;
+  border-radius: 2rem;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: .02rem;
+  margin-right: .5rem;
+}
+.counter {
+  display: flex;
+}
+.counter__btn {
+  border: none;
+  margin-right: .5rem;
+  border-radius: .3rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.refresh {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
