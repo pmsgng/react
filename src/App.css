@@ -29,3 +29,7 @@
 .header img {
   width: 6rem;
 }
+
+.content img {
+  width: 100%;
+}
