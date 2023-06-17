@@ -1,38 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+  "h h "
+  "n c";
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.counter__text {
-  border: none;
-  min-width: 8rem;
-  height: 2rem;
-  border-radius: 2rem;
-  font-style: normal;
-  font-size: 1rem;
-  letter-spacing: .02rem;
-  margin-right: .5rem;
+.header {
+  grid-area: h;
+  background-color: green;
 }
-.counter {
-  display: flex;
+.nav {
+  grid-area: n;
+  background-color: green;
 }
-.counter__btn {
-  border: none;
-  margin-right: .5rem;
-  border-radius: .3rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+.content {
+  grid-area: c;
+  background-color: green;
 }
-.refresh {
-  background-color: transparent;
-  font-size: 1.5rem;
-}
-.counter__btn:active {
-  scale: .95;
+.header img {
+  width: 6rem;
 }

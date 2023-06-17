@@ -1,16 +1,14 @@
 import './App.css';
-import Footer from './Footer';
-import Header from './Header';
-import MyBtn from './MyBtn';
-import Technologies from './Technologies';
+import Header from './components/Header';
+import Maincontent from './components/Maincontent';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Technologies />
-      <MyBtn />
-      <Footer />
+      <Navbar />
+      <Maincontent />
     </div>
   );
 }
