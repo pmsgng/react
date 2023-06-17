@@ -27,9 +27,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .refresh {
-  cursor: pointer;
   background-color: transparent;
   font-size: 1.5rem;
+}
+.counter__btn:active {
+  scale: .95;
 }
