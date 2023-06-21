@@ -5,6 +5,8 @@
 }
 .App {
   display: grid;
+  background-color: #7B1FA2;
+  color: #212121;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 1rem;
@@ -16,15 +18,21 @@
 }
 .header {
   grid-area: h;
-  background-color: green;
+  background-color: #9C27B0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header__logo {
+  height: 3.4rem;
 }
 .nav {
   grid-area: n;
-  background-color: green;
+  background-color: #9C27B0;
 }
 .content {
   grid-area: c;
-  background-color: green;
+  background-color: #9C27B0;
 }
 .header img {
   width: 6rem;

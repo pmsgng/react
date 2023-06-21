@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <header className='header'>
-            <img src="https://1000logos.net/wp-content/uploads/2022/02/Logo-Yazilim-logo.jpg" alt="" />
+            <img className='header__logo' src='https://www.svgrepo.com/show/513268/beer.svg' alt="" />
         </header>
     );
 };
