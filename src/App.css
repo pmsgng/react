@@ -19,9 +19,6 @@
 .header {
   grid-area: h;
   background-color: #9C27B0;
-  display: flex;
-  justify-content: start;
-  align-items: center;
 }
 .header__logo {
   height: 3.4rem;
@@ -29,6 +26,10 @@
 .nav {
   grid-area: n;
   background-color: #9C27B0;
+}
+.nav__item {
+  display: flex;
+  justify-content: center;
 }
 .content {
   grid-area: c;
