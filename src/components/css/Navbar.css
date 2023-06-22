@@ -1,0 +1,9 @@
+.nav {
+    grid-area: n;
+    background-color: #9C27B0;
+  }
+  .nav__item {
+    display: flex;
+    justify-content: center;
+  }
+  

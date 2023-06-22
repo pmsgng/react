@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/Maincontent.css'
 
 const Maincontent = () => {
     return (
@@ -9,7 +10,7 @@ const Maincontent = () => {
             <div className='content__user'>
                 ava + descr
             </div>
-            <div>
+            <div className='content__posts'>
                 My post
                 <div>
                     New post
