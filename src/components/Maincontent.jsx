@@ -1,28 +1,19 @@
 import React from 'react';
-import './css/Maincontent.css'
+import './css/MainContent.css'
+import PostsCreator from './PostsCreator';
+import User from './User';
 
-const Maincontent = () => {
+
+const MainContent = () => {
     return (
         <div className='content'>
             <div className='content__background'>
-                <img src="https://phonoteka.org/uploads/posts/2021-04/1619059091_9-phonoteka_org-p-razmitii-fon-nochnogo-goroda-10.jpg" alt="" />
+                <img className='content__background-img' src="https://phonoteka.org/uploads/posts/2021-04/1619059091_9-phonoteka_org-p-razmitii-fon-nochnogo-goroda-10.jpg" alt="" />
             </div>
-            <div className='content__user'>
-                ava + descr
-            </div>
-            <div className='content__posts'>
-                My post
-                <div>
-                    New post
-                </div>
-                <div>
-                    <div>post1</div>
-                    <div>post2</div>
-                    <div>post3</div>
-                </div>
-            </div>
+            <User />
+            <PostsCreator />
         </div>
     );
 };
 
-export default Maincontent;
+export default MainContent;

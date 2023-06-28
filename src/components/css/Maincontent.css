@@ -2,6 +2,9 @@
     grid-area: c;
     background-color: #9C27B0;
 }
-.content img {
+.content__background {
+    margin-bottom: 1rem;
+}
+.content__background-img {
     width: 100%;
 }
