@@ -1,6 +1,7 @@
 .header img {
     width: 6rem;
 }
+
 .header {
     grid-area: h;
     background-color: #9C27B0;
@@ -9,6 +10,7 @@
 
     border-radius: 1rem;
 }
+
 .header__logo {
     height: 3.2rem;
 }
