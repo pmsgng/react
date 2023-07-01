@@ -3,13 +3,11 @@ import PostItem from './PostItem';
 import './css/PostsCreator.css'
 
 const PostsCreator = () => {
-    // const [message,setMessage] = useState('')
     const [inputValue , setInputValue] = useState('')
     const [posts, setPosts] = useState([])
 
-    function addPost() {
-        // setMessage(inputValue)
 
+    function addPost() {
         let newPost = {
             message: inputValue,
             img: 'https://avatars.mds.yandex.net/i?id=5ccd4245265bff420a240099860ce351f20ad5d1-8991021-images-thumbs&n=13',
@@ -29,8 +27,8 @@ const PostsCreator = () => {
                 <button className='content__post-creator-btn-remove'>Remove</button>
             </div>
             <div className='content__post-creator-posts'>
-                {posts.map((post) => {
-                    return <PostItem img={post.img}  message={post.message} />
+                {posts.map( post => {
+                    return <PostItem  img={post.img}  message={post.message} />
                 })}
             </div>
         </div>

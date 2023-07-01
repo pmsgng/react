@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './css/PostItem.css'
 
 const PostItem = ({message,img}) => {
-    const[likeCount,setLikeCount] = useState(0)
+    const [likeCount,setLikeCount] = useState(0)
+
     return (
         <div className='content__posts-item'>
             <img className='content__posts-item-img' src={img} alt="" />
