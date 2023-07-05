@@ -12,11 +12,15 @@ const PostsCreator = () => {
             message: inputValue,
             img: 'https://avatars.mds.yandex.net/i?id=5ccd4245265bff420a240099860ce351f20ad5d1-8991021-images-thumbs&n=13',
         }
-        setPosts([...posts,newPost])
+
+        if(newPost.message && newPost.message !== ' ') {
+            setPosts([...posts,newPost])
+        } else {
+            return null;
+        }
+        
         setInputValue('')
     }
-
-
 
     return (
         <div className='content__post-creator'>
@@ -27,8 +31,8 @@ const PostsCreator = () => {
                 <button className='content__post-creator-btn-remove'>Remove</button>
             </div>
             <div className='content__post-creator-posts'>
-                {posts.map( post => {
-                    return <PostItem  img={post.img}  message={post.message} />
+                {posts.map( (post, index ) => {
+                    return <PostItem key={Math.random() + index}  img={post.img}  message={post.message} />
                 })}
             </div>
         </div>
