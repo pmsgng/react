@@ -4,6 +4,38 @@
 .content__post-creator-header {
     margin-bottom: .5rem;
 }
-.content__post-creator-input-block {
+.content__post-creator-input-wrap {
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
+}
+.content__post-creator-input {
+    display: block;
+    margin-right: 1rem;
+    background-color: #a937b1;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    width: 50rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.content__post-creator-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    width: 2rem;
+    height: 2rem;
+    transition: .2s ease;
+}
+.content__post-creator-btn:active {
+    box-shadow: none;
+}
+.content__post-creator-btn-add {
+    margin-right: .5rem;
+}
+.content__post-creator-btn-remove {
+
 }
