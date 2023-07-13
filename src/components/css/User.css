@@ -2,17 +2,21 @@
     width: 10rem;
     height: 10rem;
     margin-right: 1.5rem;
+    z-index: 2;
 }
 .content__user {
     display: flex;
     margin-bottom: 2rem;
+    z-index: 2;
 }
 .content__user-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 2;
 }
 .content__description-user-name {
     margin-bottom: 2rem;
     font-size: 2rem;
+    z-index: 2;
 }

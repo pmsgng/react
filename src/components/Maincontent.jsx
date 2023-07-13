@@ -7,9 +7,9 @@ import User from './User';
 const MainContent = () => {
     return (
         <div className='content'>
-            <div className='content__background'>
+            {/* <div className='content__background'>
                 <img className='content__background-img' src="https://phonoteka.org/uploads/posts/2021-04/1619059091_9-phonoteka_org-p-razmitii-fon-nochnogo-goroda-10.jpg" alt="" />
-            </div>
+            </div> */}
             <User />
             <PostsCreator />
         </div>

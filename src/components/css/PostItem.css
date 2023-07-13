@@ -31,3 +31,13 @@
 .content__posts-item-like:active {
     box-shadow: none;
 }
+.content__posts-item-remove-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    width: 2rem;
+    height: 2rem;
+    transition: .2s ease;
+}

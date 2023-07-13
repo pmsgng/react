@@ -28,14 +28,8 @@
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     width: 2rem;
     height: 2rem;
-    transition: .2s ease;
+    transition: .1s ease;
 }
 .content__post-creator-btn:active {
     box-shadow: none;
-}
-.content__post-creator-btn-add {
-    margin-right: .5rem;
-}
-.content__post-creator-btn-remove {
-
 }

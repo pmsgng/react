@@ -27,7 +27,6 @@ const PostsCreator = () => {
             <div className='content__post-creator-input-wrap'>
                 <input className='content__post-creator-input' value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" />
                 <button className='content__post-creator-btn content__post-creator-btn-add' onClick={() => addPost()}>✚</button>
-                <button className='content__post-creator-btn content__post-creator-btn-remove'>✖</button>
             </div>
             <div className='content__post-creator-posts'>
                 {posts.map( (post, index) => {

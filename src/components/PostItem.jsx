@@ -10,6 +10,7 @@ const PostItem = ({message,img}) => {
             <div className="content__posts-item-description">{message}</div>
             <div className="content__posts-item-like-count">{likeCount}</div>
             <button className='content__posts-item-like' onClick={() => setLikeCount(likeCount + 1)}>♡</button>
+            <button className='content__posts-item-remove-btn'>✖</button>
         </div>
     );
 };
