@@ -21,6 +21,10 @@ const PostsCreator = () => {
         setInputValue('')
     }
 
+    function deletePost(id) {
+        setPosts(prev => [...prev.filter((post,index) => index !== id)] )
+    }
+
     return (
         <div className='content__post-creator'>
             <div className='content__post-creator-header'>My posts</div>
@@ -30,7 +34,7 @@ const PostsCreator = () => {
             </div>
             <div className='content__post-creator-posts'>
                 {posts.map( (post, index) => {
-                    return <PostItem key={Math.random() + index}  img={post.img}  message={post.message} />
+                    return <PostItem id={index} posts={posts} key={Math.random() + index} deletePost={deletePost}  img={post.img}  message={post.message} />
                 })}
             </div>
         </div>

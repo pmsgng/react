@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './css/PostItem.css'
 
-const PostItem = ({message,img}) => {
+const PostItem = ({message,img,deletePost,id}) => {
     const [likeCount,setLikeCount] = useState(0)
 
     return (
@@ -10,7 +10,7 @@ const PostItem = ({message,img}) => {
             <div className="content__posts-item-description">{message}</div>
             <div className="content__posts-item-like-count">{likeCount}</div>
             <button className='content__posts-item-like' onClick={() => setLikeCount(likeCount + 1)}>♡</button>
-            <button className='content__posts-item-remove-btn'>✖</button>
+            <button className='content__posts-item-remove-btn' onClick={() => deletePost(id)}>✖</button>
         </div>
     );
 };
