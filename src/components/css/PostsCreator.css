@@ -1,8 +1,14 @@
 .content__post-creator {
-
 }
-.content__post-creator-header {
-    margin-bottom: .5rem;
+.content__post-creator-header-text {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 10rem;
+    opacity: .9;
+    background-color: #a937b1;
+    border-radius: .6rem;
+    padding: .2rem;
 }
 .content__post-creator-input-wrap {
     display: flex;
@@ -10,6 +16,7 @@
     margin-bottom: 1rem;
 }
 .content__post-creator-input {
+    opacity: 0.9;
     display: block;
     margin-right: 1rem;
     background-color: #a937b1;
@@ -21,8 +28,13 @@
     font-size: 1.2rem;
     padding: 1rem;
 }
+.content__post-creator-input::-webkit-input-placeholder {
+    color: #1f1f1f;
+}
 .content__post-creator-btn {
-    background-color: transparent;
+    background-color: #a937b1;
+    opacity: .9;
+    border-radius: .5rem;
     border: none;
     cursor: pointer;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);

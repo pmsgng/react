@@ -27,9 +27,9 @@ const PostsCreator = () => {
 
     return (
         <div className='content__post-creator'>
-            <div className='content__post-creator-header'>My posts</div>
+            <div className='content__post-creator-header-text'>My posts:</div>
             <div className='content__post-creator-input-wrap'>
-                <input className='content__post-creator-input' value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" />
+                <input className='content__post-creator-input' placeholder='Write a text...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" />
                 <button className='content__post-creator-btn content__post-creator-btn-add' onClick={() => addPost()}>✚</button>
             </div>
             <div className='content__post-creator-posts'>

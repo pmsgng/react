@@ -8,6 +8,11 @@
     display: flex;
     margin-bottom: 2rem;
     z-index: 2;
+    background-color: #9C27B0;
+    opacity: .9;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 .content__user-description {
     display: flex;

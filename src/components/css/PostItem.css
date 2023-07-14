@@ -1,11 +1,21 @@
 .content__posts-item {
     display: flex;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    justify-content: space-between;
+    padding: .5rem;
     margin-bottom: 1rem;
+    background-color: #9C27B0;
+    border-radius: .5rem;
+    opacity: .9;
 }
-
+.content__posts-item-foto-text-wrap {
+    display: flex;
+    align-items: center;
+}
+.content__posts-item-like-btns-wrap {
+    display: flex;
+    align-items: center;
+}
 .content__posts-item-img {
     width: 3rem;
     height: 3rem;
@@ -17,18 +27,25 @@
 }
 .content__posts-item-description {
     margin-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: inherit;
+    letter-spacing: .04rem;
 }
-.content__posts-item-like {
+.content__posts-item-like-btn {
     background-color: transparent;
     border: none;
     width: 2rem;
     height: 2rem;
     border-radius: 2rem;
+    color: red;
+    font-size: 1.2rem;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-right: .5rem;
 }
-.content__posts-item-like:active {
+.content__posts-item-like-btn:active {
     box-shadow: none;
 }
 .content__posts-item-remove-btn {
@@ -40,4 +57,5 @@
     width: 2rem;
     height: 2rem;
     transition: .2s ease;
+    margin-right: 2rem;
 }
