@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 2;
+    text-shadow: 0.06rem 0.06rem 0.25rem #3b3b3b;
 }
 .content__description-user-name {
     margin-bottom: 2rem;
