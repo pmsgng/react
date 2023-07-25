@@ -1,7 +1,8 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
-import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
+import MainContent from './components/MainContent';
 
 function App() {
   const user = {
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Navbar />
       <MainContent user={user} />
+      <Footer />
     </div>
   );
 }
